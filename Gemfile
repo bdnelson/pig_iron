@@ -26,6 +26,7 @@ gem 'uglifier',                '~> 3.0.2'
 gem 'jquery-rails',            '~> 4.2.1'
 gem 'turbolinks',              '~> 5.0.1'
 gem 'jbuilder',                '~> 2.6.0'
+gem 'draper',                  '~> 3.0.0-pre1'
 
 # Deployment
 group :development do
