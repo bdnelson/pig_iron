@@ -52,5 +52,8 @@ group :development do
   gem 'better_errors',         '~> 2.1.1'
   gem 'binding_of_caller',     '~> 0.7.2'
   gem 'rack-livereload',       '~> 0.3.16'
+  gem 'guard',                 '~> 2.14.0'
+  gem 'guard-livereload',      '~> 2.5.2', require: false
+  gem 'guard-minitest',        '~> 2.4.6'
 end
 
