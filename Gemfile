@@ -17,6 +17,7 @@ gem 'paranoia',                '~> 2.2.0.pre'
 
 # Background
 gem 'sidekiq',                 '~> 4.2.1'
+gem 'whenever',                '~> 0.9.7', require: false
 
 # UI
 gem 'sass-rails',              '~> 5.0.6'
