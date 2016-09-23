@@ -14,6 +14,7 @@ gem 'redis',                   '~> 3.3.1'
 # Data Layer Additions
 gem 'bcrypt',                  '~> 3.1.7'
 gem 'paranoia',                '~> 2.2.0.pre'
+gem 'paper_trail',             '~> 5.2.2'
 
 # Background
 gem 'sidekiq',                 '~> 4.2.1'
