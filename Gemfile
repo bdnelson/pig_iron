@@ -48,5 +48,6 @@ group :development do
   gem 'meta_request',          '~> 0.4.0'
   gem 'better_errors',         '~> 2.1.1'
   gem 'binding_of_caller',     '~> 0.7.2'
+  gem 'rack-livereload',       '~> 0.3.16'
 end
 
