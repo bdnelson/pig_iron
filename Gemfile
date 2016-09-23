@@ -42,10 +42,11 @@ end
 group :development do
   gem 'awesome_print',         '~> 1.7.0'
   gem 'pry-rails',             '~> 0.3.4'
-  gem 'web-console',           '~> 3.3.1'
   gem 'listen',                '~> 3.0.5'
   gem 'spring',                '~> 1.7.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'meta_request',          '~> 0.4.0'
+  gem 'better_errors',         '~> 2.1.1'
+  gem 'binding_of_caller',     '~> 0.7.2'
 end
 

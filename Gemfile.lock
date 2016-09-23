@@ -43,6 +43,12 @@ GEM
     arel (7.1.2)
     awesome_print (1.7.0)
     bcrypt (3.1.11)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (9.0.5)
     callsite (0.0.11)
@@ -192,11 +198,6 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
-    web-console (3.3.1)
-      actionview (>= 5.0)
-      activemodel (>= 5.0)
-      debug_inspector
-      railties (>= 5.0)
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -207,6 +208,8 @@ PLATFORMS
 DEPENDENCIES
   awesome_print (~> 1.7.0)
   bcrypt (~> 3.1.7)
+  better_errors (~> 2.1.1)
+  binding_of_caller (~> 0.7.2)
   byebug (~> 9.0.5)
   capistrano-rails (~> 1.1.8)
   capistrano-rbenv (~> 2.0.4)
@@ -229,7 +232,6 @@ DEPENDENCIES
   turbolinks (~> 5.0.1)
   tzinfo-data (~> 1.2.2)
   uglifier (~> 3.0.2)
-  web-console (~> 3.3.1)
 
 RUBY VERSION
    ruby 2.3.1p112
