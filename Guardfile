@@ -80,7 +80,20 @@ guard :minitest, spring: true do
   # watch(%r{^app/models/(.*)\.rb$})      { |m| "test/unit/#{m[1]}_test.rb" }
 end
 
+guard :bundler do
+  require 'guard/bundler'
+  require 'guard/bundler/verify'
+  helper = Guard::Bundler::Verify.new
+
+  files = ['Gemfile']
+  files += Dir['*.gemspec'] if files.any? { |f| helper.uses_gemspec?(f) }
+
+  # Assume files are symlinked from somewhere
+  files.each { |file| watch(helper.real_path(file)) }
+end
+
 guard 'ctags-bundler', :src_path => ["app", "lib"] do
   watch(/^(app|lib)\/.*\.rb$/)
   watch('Gemfile.lock')
 end
+
