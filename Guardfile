@@ -54,7 +54,7 @@ guard 'livereload' do
   watch(%r{config/locales/.+\.yml})
 end
 
-guard :minitest do
+guard :minitest, spring: true do
   # with Minitest::Unit
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
   watch(%r{^lib/(.*/)?([^/]+)\.rb$})     { |m| "test/#{m[1]}test_#{m[2]}.rb" }
@@ -78,4 +78,9 @@ guard :minitest do
   # watch(%r{^app/controllers/(.*)\.rb$}) { |m| "test/functional/#{m[1]}_test.rb" }
   # watch(%r{^app/helpers/(.*)\.rb$})     { |m| "test/helpers/#{m[1]}_test.rb" }
   # watch(%r{^app/models/(.*)\.rb$})      { |m| "test/unit/#{m[1]}_test.rb" }
+end
+
+guard 'ctags-bundler', :src_path => ["app", "lib"] do
+  watch(/^(app|lib)\/.*\.rb$/)
+  watch('Gemfile.lock')
 end

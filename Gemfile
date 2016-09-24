@@ -38,7 +38,15 @@ end
 gem 'tzinfo-data',             '~> 1.2.2', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Development/Test
+group :test do
+  gem 'single_cov',            '~> 0.5.2'
+  gem 'minitest-reporters'
+  gem 'minitest-ci',           github: 'circleci/minitest-ci'
+  gem 'minitest-osx'
+end
+
 group :development, :test do
+  gem 'fabrication',           '~> 2.5.1'
   gem 'byebug',                '~> 9.0.5', platform: :mri
 end
 
@@ -55,5 +63,6 @@ group :development do
   gem 'guard',                 '~> 2.14.0'
   gem 'guard-livereload',      '~> 2.5.2', require: false
   gem 'guard-minitest',        '~> 2.4.6'
+  gem 'guard-ctags-bundler'
 end
 
