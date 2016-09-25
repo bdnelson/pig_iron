@@ -19,6 +19,7 @@ gem 'paper_trail',             '~> 5.2.2'
 # Background
 gem 'sidekiq',                 '~> 4.2.1'
 gem 'whenever',                '~> 0.9.7', require: false
+gem 'seed-fu',                 '~> 2.3.6'
 
 # UI
 gem 'sass-rails',              '~> 5.0.6'
