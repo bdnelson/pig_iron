@@ -19,6 +19,7 @@
 !/tmp/.keep
 /coverage
 /test/reports
+*.tags
 
 # Editors/OS
 .*.swp
