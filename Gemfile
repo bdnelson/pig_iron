@@ -48,6 +48,11 @@ group :test do
   gem 'minitest-reporters',    '~> 1.1.11'
   gem 'minitest-ci',           '~> 3.1.0'
   gem 'minitest-osx',          '~> 0.1.0'
+  gem 'capybara_minitest_spec','~> 1.0.5'
+  gem 'poltergeist',           '~> 1.10.0'
+  gem 'fakeredis',             '~> 0.6.0', require: 'fakeredis/minitest'
+  gem 'mocha',                 '~> 1.1.0'
+  gem 'timecop',               '~> 0.8.1'
 end
 
 group :development, :test do
