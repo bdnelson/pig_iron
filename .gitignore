@@ -18,6 +18,7 @@
 !/log/.keep
 !/tmp/.keep
 /coverage
+/test/reports
 
 # Editors/OS
 .*.swp
