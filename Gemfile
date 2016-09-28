@@ -45,9 +45,6 @@ gem 'tzinfo-data',             '~> 1.2.2', platforms: [:mingw, :mswin, :x64_ming
 # Development/Test
 group :test do
   gem 'single_cov',            '~> 0.5.2'
-  gem 'minitest-reporters',    '~> 1.1.11'
-  gem 'minitest-ci',           '~> 3.1.0'
-  gem 'minitest-osx',          '~> 0.1.0'
   gem 'capybara_minitest_spec','~> 1.0.5'
   gem 'poltergeist',           '~> 1.10.0'
   gem 'fakeredis',             '~> 0.6.0', require: 'fakeredis/minitest'
@@ -59,11 +56,16 @@ group :development, :test do
   gem 'fabrication',           '~> 2.5.1'
   gem 'byebug',                '~> 9.0.5', platform: :mri
   gem 'rails-flog',            '1.3.3', require: 'flog'
+  gem 'factory_girl_rails',    '~> 4.0'
+  gem 'rspec-rails',           '~> 3.5'
 end
 
 group :development do
   gem 'awesome_print',         '~> 1.7.0'
   gem 'pry-rails',             '~> 0.3.4'
+  gem 'pry-remote'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
   gem 'listen',                '~> 3.0.5'
   gem 'spring',                '~> 1.7.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -73,9 +75,9 @@ group :development do
   gem 'rack-livereload',       '~> 0.3.16'
   gem 'guard',                 '~> 2.14.0'
   gem 'guard-livereload',      '~> 2.5.2', require: false
-  gem 'guard-minitest',        '~> 2.4.6'
   gem 'guard-ctags-bundler',   '~> 1.4.0'
   gem 'guard-bundler',         '~> 2.1.0', require: false
+  gem 'guard-rspec'
   gem 'reek',                  '~> 4.4.2'
   gem 'rails_best_practices',  '~> 1.17.0'
   gem 'brakeman',              '~> 3.4.0'
