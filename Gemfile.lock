@@ -408,6 +408,7 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 2.6.0)
   jquery-rails (~> 4.2.1)
+  json
   kaminari (~> 0.16.2)
   listen (~> 3.0.5)
   meta_request (~> 0.4.0)

@@ -5,6 +5,7 @@ ruby '2.3.1'
 gem 'dotenv-rails',            '~> 2.1.1', require: 'dotenv/rails-now'
 gem 'rails',                   '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma',                    '~> 3.6.0'
+gem 'json'
 
 # Data Store
 gem 'pg',                      '~> 0.19.0'
