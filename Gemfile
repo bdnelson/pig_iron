@@ -56,17 +56,18 @@ end
 group :development, :test do
   gem 'fabrication',           '~> 2.5.1'
   gem 'byebug',                '~> 9.0.5', platform: :mri
-  gem 'rails-flog',            '1.3.3', require: 'flog'
+  gem 'rails-flog',            '~> 1.3.3', require: 'flog'
   gem 'factory_girl_rails',    '~> 4.0'
   gem 'rspec-rails',           '~> 3.5'
+  gem 'simplecov',             '~> 0.12.0', require: false
 end
 
 group :development do
   gem 'awesome_print',         '~> 1.7.0'
   gem 'pry-rails',             '~> 0.3.4'
-  gem 'pry-remote'
-  gem 'pry-rescue'
-  gem 'pry-stack_explorer'
+  gem 'pry-remote',            '~> 0.1.8'
+  gem 'pry-rescue',            '~> 1.4.4'
+  gem 'pry-stack_explorer',    '~> 0.4.9'
   gem 'listen',                '~> 3.0.5'
   gem 'spring',                '~> 1.7.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -78,7 +79,7 @@ group :development do
   gem 'guard-livereload',      '~> 2.5.2', require: false
   gem 'guard-ctags-bundler',   '~> 1.4.0'
   gem 'guard-bundler',         '~> 2.1.0', require: false
-  gem 'guard-rspec'
+  gem 'guard-rspec',           '~> 4.7.3'
   gem 'reek',                  '~> 4.4.2'
   gem 'rails_best_practices',  '~> 1.17.0'
   gem 'brakeman',              '~> 3.4.0'
