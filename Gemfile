@@ -52,7 +52,7 @@ gem 'tzinfo-data',             '~> 1.2.2', platforms: [:mingw, :mswin, :x64_ming
 group :test do
   gem 'single_cov',            '~> 0.5.2'
   gem 'poltergeist',           '~> 1.10.0'
-  gem 'fakeredis',             '~> 0.6.0', require: 'fakeredis/minitest'
+  gem 'fakeredis',             '~> 0.6.0', require: 'fakeredis/rspec'
   gem 'mocha',                 '~> 1.1.0'
   gem 'timecop',               '~> 0.8.1'
 end
