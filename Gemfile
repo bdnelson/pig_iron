@@ -26,7 +26,7 @@ gem 'whenever',                '~> 0.9.7', require: false
 gem 'seed-fu',                 '~> 2.3.6'
 gem 'paperclip',               '~> 5.1.0'
 gem 'active_model_serializers','~> 0.10.0'
-gem 'vitrus',                  '~> 1.0.5'
+gem 'virtus',                  '~> 1.0.5'
 
 # UI
 gem 'sass-rails',              '~> 5.0.6'
@@ -41,10 +41,11 @@ gem 'breadcrumbs_on_rails',    '~> 3.0.1'
 #gem 'omniauth',                '~> 1.3.1'
 #gem 'devise',                  '~> 4.2.0'
 #gem 'cancancan',               '~> 1.15.0'
-
-# API
+#gem 'devise-two-factor',       '~> 3.0.0'
 #gem 'devise_token_auth',       '~> 0.1.39'
 #gem 'jwt',                     '~> 1.5.6'
+
+# API
 #gem 'rack-attack',              '~> 5.0.1'
 
 # Javascript Dependencies
