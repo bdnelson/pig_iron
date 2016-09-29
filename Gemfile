@@ -25,8 +25,8 @@ gem 'sidekiq',                 '~> 4.2.2'
 gem 'whenever',                '~> 0.9.7', require: false
 gem 'seed-fu',                 '~> 2.3.6'
 gem 'paperclip',               '~> 5.1.0'
-gem 'simple_command',          '~> 0.0.9'
 gem 'active_model_serializers','~> 0.10.0'
+gem 'vitrus',                  '~> 1.0.5'
 
 # UI
 gem 'sass-rails',              '~> 5.0.6'
