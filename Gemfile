@@ -41,11 +41,9 @@ group :development do
   gem 'capistrano-rbenv',      '~> 2.0.4'
 end
 
-# Production
-group :production, :staging do
-  gem 'skylight',              '~> 0.10.5'
-  gem 'rollbar',               '~> 2.13.2'
-end
+# Monitoring 
+gem 'skylight',              '~> 0.10.5'
+gem 'rollbar',               '~> 2.13.2'
 
 # Platform specific
 gem 'tzinfo-data',             '~> 1.2.2', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -61,7 +59,6 @@ group :test do
 end
 
 group :development, :test do
-  gem 'fabrication',           '~> 2.5.1'
   gem 'byebug',                '~> 9.0.5', platform: :mri
   gem 'rails-flog',            '~> 1.3.3', require: 'flog'
   gem 'factory_girl_rails',    '~> 4.0'
