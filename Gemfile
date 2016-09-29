@@ -36,8 +36,15 @@ gem 'breadcrumbs_on_rails',    '~> 3.0.1'
 
 # Deployment
 group :development do
+  gem 'autoprefixer-rails',    '~> 6.5.0'
   gem 'capistrano-rails',      '~> 1.1.8'
   gem 'capistrano-rbenv',      '~> 2.0.4'
+end
+
+# Production
+group :production, :staging do
+  gem 'skylight',              '~> 0.10.5'
+  gem 'rollbar',               '~> 2.13.2'
 end
 
 # Platform specific
