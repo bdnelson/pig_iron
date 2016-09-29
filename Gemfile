@@ -3,9 +3,9 @@ ruby '2.3.1'
 
 # Environment
 gem 'dotenv-rails',            '~> 2.1.1', require: 'dotenv/rails-now'
-gem 'rails',                   '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails',                   '~> 5.0.0.1', '>= 5.0.0.1'
 gem 'puma',                    '~> 3.6.0'
-gem 'json'
+gem 'json',                    '~> 2.0.2'
 
 # Data Store
 gem 'pg',                      '~> 0.19.0'
@@ -13,7 +13,7 @@ gem 'sqlite3',                 '~> 1.3.11'
 gem 'redis',                   '~> 3.3.1'
 
 # Data Layer Additions
-gem 'bcrypt',                  '~> 3.1.7'
+gem 'bcrypt',                  '~> 3.1.11'
 gem 'paranoia',                '~> 2.2.0.pre'
 gem 'paper_trail',             '~> 5.2.2'
 gem 'kaminari',                '~> 0.17.0'
@@ -21,7 +21,7 @@ gem 'redis-objects',           '~> 1.2.1'
 gem 'geokit-rails',            '~> 2.2.0'
 
 # Background
-gem 'sidekiq',                 '~> 4.2.1'
+gem 'sidekiq',                 '~> 4.2.2'
 gem 'whenever',                '~> 0.9.7', require: false
 gem 'seed-fu',                 '~> 2.3.6'
 gem 'paperclip',               '~> 5.1.0'
@@ -34,7 +34,7 @@ gem 'uglifier',                '~> 3.0.2'
 gem 'jquery-rails',            '~> 4.2.1'
 gem 'turbolinks',              '~> 5.0.1'
 gem 'jbuilder',                '~> 2.6.0'
-gem 'draper',                  '~> 3.0.0-pre1'
+gem 'draper',                  '~> 3.0.0.pre1'
 gem 'breadcrumbs_on_rails',    '~> 3.0.1'
 
 # Authentication/Authorization
@@ -54,13 +54,13 @@ end
 
 # Deployment
 group :development do
-  gem 'autoprefixer-rails',    '~> 6.5.0'
+  gem 'autoprefixer-rails',    '~> 6.5.0.1'
   gem 'capistrano-rails',      '~> 1.1.8'
   gem 'capistrano-rbenv',      '~> 2.0.4'
 end
 
 # Monitoring
-gem 'skylight',              '~> 0.10.5'
+gem 'skylight',              '~> 0.10.6'
 gem 'rollbar',               '~> 2.13.2'
 
 # Platform specific
@@ -68,7 +68,7 @@ gem 'tzinfo-data',             '~> 1.2.2', platforms: [:mingw, :mswin, :x64_ming
 
 # Development/Test
 group :test do
-  gem 'single_cov',            '~> 0.5.2'
+  gem 'single_cov',            '~> 0.5.4'
   gem 'poltergeist',           '~> 1.10.0'
   gem 'fakeredis',             '~> 0.6.0', require: 'fakeredis/rspec'
   gem 'mocha',                 '~> 1.1.0'
@@ -78,8 +78,8 @@ end
 group :development, :test do
   gem 'byebug',                '~> 9.0.5', platform: :mri
   gem 'rails-flog',            '~> 1.3.3', require: 'flog'
-  gem 'factory_girl_rails',    '~> 4.0'
-  gem 'rspec-rails',           '~> 3.5'
+  gem 'factory_girl_rails',    '~> 4.7.0'
+  gem 'rspec-rails',           '~> 3.5.2'
   gem 'simplecov',             '~> 0.12.0', require: false
 end
 
@@ -88,7 +88,7 @@ group :development do
   gem 'pry-rails',             '~> 0.3.4'
   gem 'pry-remote',            '~> 0.1.8'
   gem 'pry-rescue',            '~> 1.4.4'
-  gem 'pry-stack_explorer',    '~> 0.4.9'
+  gem 'pry-stack_explorer',    '~> 0.4.9.2'
   gem 'listen',                '~> 3.1.5'
   gem 'spring',                '~> 1.7.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
