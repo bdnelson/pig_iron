@@ -1,4 +1,4 @@
-# Pig Iron - An Oppinionated Rails 5 Template
+# Pig Iron - An Opinionated Rails 5 Template
 
 
 ## Application Structure
