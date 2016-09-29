@@ -1,5 +1,16 @@
 # Pig Iron - An Opinionated Rails 5 Template
 
+## Overview
+
+I use this project as a holder for the template that I like to use when starting a Rails application from scratch.  It also
+services as a place to investigate new tools/approaches for problems I am facing.  Use this at your own risk.
+
+## Usage
+
+* Copy this project into your own directory.
+* Change all of the "PigIron" references to your app name.
+* Remove the static controller, its routes and assets.
+* Push it up to your repo and start development on your project.
 
 ## Application Structure
 
