@@ -105,5 +105,6 @@ group :development do
   gem 'rails_best_practices',  '~> 1.17.0'
   gem 'brakeman',              '~> 3.4.0'
   gem 'letter_opener',         '~> 1.4.1'
+  gem 'pessimize',             '~> 0.3.0'
 end
 
