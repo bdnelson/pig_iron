@@ -24,6 +24,7 @@ gem 'geokit-rails',            '~> 2.2.0'
 gem 'sidekiq',                 '~> 4.2.1'
 gem 'whenever',                '~> 0.9.7', require: false
 gem 'seed-fu',                 '~> 2.3.6'
+gem 'paperclip',               '~> 5.1.0'
 
 # UI
 gem 'sass-rails',              '~> 5.0.6'
@@ -34,6 +35,10 @@ gem 'jbuilder',                '~> 2.6.0'
 gem 'draper',                  '~> 3.0.0-pre1'
 gem 'breadcrumbs_on_rails',    '~> 3.0.1'
 
+# Authentication/Authorization
+#gem 'devise',                  '~> 4.2.0'
+#gem 'cancancan',               '~> 1.15.0'
+
 # Deployment
 group :development do
   gem 'autoprefixer-rails',    '~> 6.5.0'
@@ -41,7 +46,7 @@ group :development do
   gem 'capistrano-rbenv',      '~> 2.0.4'
 end
 
-# Monitoring 
+# Monitoring
 gem 'skylight',              '~> 0.10.5'
 gem 'rollbar',               '~> 2.13.2'
 
@@ -86,5 +91,6 @@ group :development do
   gem 'reek',                  '~> 4.4.2'
   gem 'rails_best_practices',  '~> 1.17.0'
   gem 'brakeman',              '~> 3.4.0'
+  gem 'letter_opener',         '~> 1.4.1'
 end
 

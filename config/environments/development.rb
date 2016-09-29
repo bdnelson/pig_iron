@@ -55,4 +55,7 @@ Rails.application.configure do
   # Add Rack::LiveReload
   config.middleware.use(Rack::LiveReload, ignore: [%r{/tmp}])
   config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+
+  # Use letter_opener to handle dev email
+  config.action_mailer.delivery_method = :letter_opener
 end
