@@ -16,7 +16,7 @@ gem 'redis',                   '~> 3.3.1'
 gem 'bcrypt',                  '~> 3.1.7'
 gem 'paranoia',                '~> 2.2.0.pre'
 gem 'paper_trail',             '~> 5.2.2'
-gem 'kaminari',                '~> 0.16.2'
+gem 'kaminari',                '~> 0.17.0'
 gem 'redis-objects',           '~> 1.2.1'
 gem 'geokit-rails',            '~> 2.2.0'
 
@@ -51,7 +51,6 @@ gem 'tzinfo-data',             '~> 1.2.2', platforms: [:mingw, :mswin, :x64_ming
 # Development/Test
 group :test do
   gem 'single_cov',            '~> 0.5.2'
-  gem 'capybara_minitest_spec','~> 1.0.5'
   gem 'poltergeist',           '~> 1.10.0'
   gem 'fakeredis',             '~> 0.6.0', require: 'fakeredis/minitest'
   gem 'mocha',                 '~> 1.1.0'
@@ -72,7 +71,7 @@ group :development do
   gem 'pry-remote',            '~> 0.1.8'
   gem 'pry-rescue',            '~> 1.4.4'
   gem 'pry-stack_explorer',    '~> 0.4.9'
-  gem 'listen',                '~> 3.0.5'
+  gem 'listen',                '~> 3.1.5'
   gem 'spring',                '~> 1.7.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'meta_request',          '~> 0.4.0'
