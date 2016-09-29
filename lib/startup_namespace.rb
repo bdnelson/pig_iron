@@ -1,3 +1,4 @@
+# From: https://gist.github.com/alassek/866f71cf15d83de07c1d42a5f264ac36
 class StartupNamespace
   def initialize(controller, action)
     @namespace = controller.split('/')

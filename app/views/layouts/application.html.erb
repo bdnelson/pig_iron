@@ -10,5 +10,9 @@
 
   <body startup="<%= startup_namespace(controller_name, action_name) %>">
     <%= yield %>
+
+    <script type="text/javascript">PigIron.original_url = "<%= request.original_url %>"</script>
+    <%= yield :javascript %>
+    <script type="text/javascript">PigIron.startup()</script>
   </body>
 </html>

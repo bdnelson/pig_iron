@@ -6,8 +6,8 @@
 //= require_tree ./channels
 
 (function() {
-  this.App || (this.App = {});
+  this.PigIron || (this.PigIron = {});
 
-  App.cable = ActionCable.createConsumer();
+  PigIron.cable = ActionCable.createConsumer();
 
 }).call(this);
